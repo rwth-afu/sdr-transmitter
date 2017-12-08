@@ -1,0 +1,329 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:sdr-transmitter
+LIBS:sdr-transmitter-old
+LIBS:sdr-transmitter-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 2900 3950 0    60   Input ~ 0
+RF_IN
+Text HLabel 8700 3950 2    60   Input ~ 0
+RF_OUT
+$Comp
+L C C?
+U 1 1 5A1F13EA
+P 3700 4200
+F 0 "C?" H 3725 4300 50  0000 L CNN
+F 1 "10pF" H 3725 4100 50  0000 L CNN
+F 2 "" H 3738 4050 50  0001 C CNN
+F 3 "" H 3700 4200 50  0001 C CNN
+	1    3700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A1F1436
+P 4650 4200
+F 0 "C?" H 4675 4300 50  0000 L CNN
+F 1 "33pF" H 4675 4100 50  0000 L CNN
+F 2 "" H 4688 4050 50  0001 C CNN
+F 3 "" H 4650 4200 50  0001 C CNN
+	1    4650 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A1F1488
+P 6550 4200
+F 0 "C?" H 6575 4300 50  0000 L CNN
+F 1 "24pF" H 6575 4100 50  0000 L CNN
+F 2 "" H 6588 4050 50  0001 C CNN
+F 3 "" H 6550 4200 50  0001 C CNN
+	1    6550 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A1F14CB
+P 7600 4200
+F 0 "C?" H 7625 4300 50  0000 L CNN
+F 1 "10pF" H 7625 4100 50  0000 L CNN
+F 2 "" H 7638 4050 50  0001 C CNN
+F 3 "" H 7600 4200 50  0001 C CNN
+	1    7600 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L BGA7027 U?
+U 1 1 5A1F193C
+P 5650 3950
+F 0 "U?" H 5650 4150 50  0000 L CNN
+F 1 "BGA7027" H 5650 3750 50  0000 L CNN
+F 2 "" H 5650 3950 50  0001 C CNN
+F 3 "" H 5650 4150 50  0001 C CNN
+	1    5650 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A1F19BD
+P 5550 4500
+F 0 "#PWR?" H 5550 4250 50  0001 C CNN
+F 1 "GND" H 5550 4350 50  0000 C CNN
+F 2 "" H 5550 4500 50  0001 C CNN
+F 3 "" H 5550 4500 50  0001 C CNN
+	1    5550 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 4250 5550 4500
+Wire Wire Line
+	3450 3950 3700 3950
+Wire Wire Line
+	3700 3950 4650 3950
+Wire Wire Line
+	4650 3950 5350 3950
+Wire Wire Line
+	3700 3650 3700 3950
+Wire Wire Line
+	3700 3950 3700 4050
+Connection ~ 3700 3950
+$Comp
+L GND #PWR?
+U 1 1 5A1F1A42
+P 3700 4500
+F 0 "#PWR?" H 3700 4250 50  0001 C CNN
+F 1 "GND" H 3700 4350 50  0000 C CNN
+F 2 "" H 3700 4500 50  0001 C CNN
+F 3 "" H 3700 4500 50  0001 C CNN
+	1    3700 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 4350 3700 4500
+Wire Wire Line
+	4650 3950 4650 4050
+Connection ~ 4650 3950
+$Comp
+L GND #PWR?
+U 1 1 5A1F1B69
+P 4650 4500
+F 0 "#PWR?" H 4650 4250 50  0001 C CNN
+F 1 "GND" H 4650 4350 50  0000 C CNN
+F 2 "" H 4650 4500 50  0001 C CNN
+F 3 "" H 4650 4500 50  0001 C CNN
+	1    4650 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 4350 4650 4500
+$Comp
+L GND #PWR?
+U 1 1 5A1F1BA0
+P 6550 4550
+F 0 "#PWR?" H 6550 4300 50  0001 C CNN
+F 1 "GND" H 6550 4400 50  0000 C CNN
+F 2 "" H 6550 4550 50  0001 C CNN
+F 3 "" H 6550 4550 50  0001 C CNN
+	1    6550 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 4350 6550 4550
+Wire Wire Line
+	5950 3950 6550 3950
+Wire Wire Line
+	6550 3950 7600 3950
+Wire Wire Line
+	7600 3950 8050 3950
+Wire Wire Line
+	6550 3950 6550 4050
+Wire Wire Line
+	7600 3400 7600 3950
+Wire Wire Line
+	7600 3950 7600 4050
+Connection ~ 6550 3950
+$Comp
+L GND #PWR?
+U 1 1 5A1F1C64
+P 7600 4550
+F 0 "#PWR?" H 7600 4300 50  0001 C CNN
+F 1 "GND" H 7600 4400 50  0000 C CNN
+F 2 "" H 7600 4550 50  0001 C CNN
+F 3 "" H 7600 4550 50  0001 C CNN
+	1    7600 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 4350 7600 4550
+$Comp
+L C C?
+U 1 1 5A1F1D56
+P 3300 3950
+F 0 "C?" H 3325 4050 50  0000 L CNN
+F 1 "1nF" H 3325 3850 50  0000 L CNN
+F 2 "" H 3338 3800 50  0001 C CNN
+F 3 "" H 3300 3950 50  0001 C CNN
+	1    3300 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2900 3950 3150 3950
+$Comp
+L C C?
+U 1 1 5A1F1E6C
+P 8200 3950
+F 0 "C?" H 8225 4050 50  0000 L CNN
+F 1 "1nF" H 8225 3850 50  0000 L CNN
+F 2 "" H 8238 3800 50  0001 C CNN
+F 3 "" H 8200 3950 50  0001 C CNN
+	1    8200 3950
+	0    1    1    0   
+$EndComp
+Connection ~ 7600 3950
+Wire Wire Line
+	8350 3950 8700 3950
+Text Notes 3850 3950 0    60   ~ 0
+L=10.454mm
+Text Notes 4750 3950 0    60   ~ 0
+L=3.684mm\n
+Text Notes 5950 3950 0    60   ~ 0
+L=4.617mm
+Text Notes 6750 3950 0    60   ~ 0
+L=11.286mm
+$Comp
+L L L?
+U 1 1 5A1F223A
+P 7600 3250
+F 0 "L?" V 7550 3250 50  0000 C CNN
+F 1 "100nH" V 7675 3250 50  0000 C CNN
+F 2 "" H 7600 3250 50  0001 C CNN
+F 3 "" H 7600 3250 50  0001 C CNN
+	1    7600 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 2450 7600 3100
+Wire Wire Line
+	6550 2450 6700 2450
+Wire Wire Line
+	6700 2450 7050 2450
+Wire Wire Line
+	7050 2450 7600 2450
+$Comp
+L C C?
+U 1 1 5A1F23AF
+P 7050 2700
+F 0 "C?" H 7075 2800 50  0000 L CNN
+F 1 "100pF" H 7075 2600 50  0000 L CNN
+F 2 "" H 7088 2550 50  0001 C CNN
+F 3 "" H 7050 2700 50  0001 C CNN
+	1    7050 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A1F2407
+P 6700 2700
+F 0 "C?" H 6725 2800 50  0000 L CNN
+F 1 "100nF" H 6725 2600 50  0000 L CNN
+F 2 "" H 6738 2550 50  0001 C CNN
+F 3 "" H 6700 2700 50  0001 C CNN
+	1    6700 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 2550 7050 2450
+Connection ~ 7050 2450
+Wire Wire Line
+	6700 2550 6700 2450
+Connection ~ 6700 2450
+$Comp
+L GND #PWR?
+U 1 1 5A1F247F
+P 6700 2900
+F 0 "#PWR?" H 6700 2650 50  0001 C CNN
+F 1 "GND" H 6700 2750 50  0000 C CNN
+F 2 "" H 6700 2900 50  0001 C CNN
+F 3 "" H 6700 2900 50  0001 C CNN
+	1    6700 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 2850 6700 2900
+$Comp
+L GND #PWR?
+U 1 1 5A1F24DE
+P 7050 2900
+F 0 "#PWR?" H 7050 2650 50  0001 C CNN
+F 1 "GND" H 7050 2750 50  0000 C CNN
+F 2 "" H 7050 2900 50  0001 C CNN
+F 3 "" H 7050 2900 50  0001 C CNN
+	1    7050 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 2850 7050 2900
+Wire Wire Line
+	6550 2150 6550 2450
+$Comp
+L +5V #PWR?
+U 1 1 5A1F26A8
+P 6550 2150
+F 0 "#PWR?" H 6550 2000 50  0001 C CNN
+F 1 "+5V" H 6550 2290 50  0000 C CNN
+F 2 "" H 6550 2150 50  0001 C CNN
+F 3 "" H 6550 2150 50  0001 C CNN
+	1    6550 2150
+	1    0    0    -1  
+$EndComp
+Text Notes 3500 3400 0    60   ~ 0
+Coplanar Wave Guide (Z0 = 150 Ω)\nTrace Width: 0.2 mm\nGap to Groundplane: 2 mm
+Text Label 3700 3650 0    60   ~ 0
+DRV_INPUT_150OHM
+Text Label 7600 3600 0    60   ~ 0
+DRV_OUTPUT_150OHM
+$EndSCHEMATC
