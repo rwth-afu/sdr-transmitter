@@ -29,7 +29,7 @@
 - Gain (typ): 17 dB
 - [Datasheet](https://www.nxp.com/docs/en/data-sheet/AFT09MS015N.pdf)
 
-### Power Detector: Analog Devices AD8364
+### Power Detector: Analog Devices AD8364 (*optional*)
 - Frequency Range: LF - 2700 MHz
 - Dual-channel and channel difference output port
 - 60 dB dynamic range
