@@ -1,0 +1,19 @@
+(module Driver_Output_Match (layer F.Cu) (tedit 5B0C24A5)
+  (fp_text reference REF** (at 0 -1.685) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value Driver_Output_Match (at 0.085 10.305) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad 1 smd custom (at 1.6 0.95) (size 1 1.1) (layers F.Cu F.Paste F.Mask)
+    (options (clearance outline) (anchor rect))
+    (primitives
+      (gr_poly (pts
+         (xy 0.5 -0.55) (xy -0.5 -0.55) (xy -0.5 -0.95) (xy -1.6 -0.95) (xy -1.6 -0.55)
+         (xy -2.6 -0.55) (xy -3.7 0.55) (xy -3.7 5.72) (xy -2.92 6.5) (xy 4.9 6.5)
+         (xy 4.9 8.05) (xy 6 8.05) (xy 6 6.175) (xy 5.225 5.4) (xy -2.6 5.4)
+         (xy -2.6 0.55) (xy 0.5 0.55)) (width 0.01))
+    ))
+  (pad 1 smd rect (at 7.05 8.5) (size 1.1 1) (layers F.Cu F.Paste F.Mask))
+  (pad 1 smd rect (at 0.55 0.2) (size 1.1 0.4) (layers F.Cu F.Paste F.Mask))
+)

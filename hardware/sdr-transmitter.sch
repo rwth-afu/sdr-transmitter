@@ -1,43 +1,10 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:sdr-transmitter
+EESchema Schematic File Version 4
 LIBS:sdr-transmitter-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -47,42 +14,134 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 5750 3200 1100 200 
-U 5A1F13A2
-F0 "PA Driver" 60
-F1 "pa_driver.sch" 60
-F2 "RF_IN" I L 5750 3300 60 
-F3 "RF_OUT" I R 6850 3300 60 
-$EndSheet
 Text Notes 600  650  0    60   ~ 0
-Substrate: FR4 (e_r = 4.6, thickness: 1.6mm, 35µm/1oz copper)
+Substrate: FR4 (e_r = 4.5, thickness: 0.6mm, 35µm/1oz copper)
 $Sheet
-S 3850 3200 1350 1550
+S 5650 2400 1350 1550
 U 5A22ED7D
 F0 "IQ Modulator" 60
 F1 "iq_modulator.sch" 60
-F2 "RFOUT" I R 5200 3300 60 
-F3 "IBB" I L 3850 3300 60 
-F4 "~IBB" I L 3850 3400 60 
-F5 "QBB" I L 3850 3600 60 
-F6 "TXDIS" I L 3850 4050 60 
-F7 "CS" I L 3850 4150 60 
-F8 "SDI" I L 3850 4250 60 
-F9 "CLK" I L 3850 4350 60 
-F10 "SDO" I L 3850 4450 60 
-F11 "~QBB" I L 3850 3700 60 
+F2 "RFOUT" I R 7000 2500 60 
+F3 "IBB" I L 5650 2500 60 
+F4 "~IBB" I L 5650 2600 60 
+F5 "QBB" I L 5650 2800 60 
+F6 "TXDIS" I L 5650 3250 60 
+F7 "CS" I L 5650 3350 60 
+F8 "SDI" I L 5650 3450 60 
+F9 "CLK" I L 5650 3550 60 
+F10 "SDO" I L 5650 3650 60 
+F11 "~QBB" I L 5650 2900 60 
 $EndSheet
 $Sheet
-S 7300 3200 950  200 
+S 7500 2400 950  200 
 U 5A2AAB8B
 F0 "Power Amplifier" 60
 F1 "pa.sch" 60
-F2 "RF_IN" I L 7300 3300 60 
-F3 "RF_OUT" O R 8250 3300 60 
+F2 "RF_IN" I L 7500 2500 60 
+F3 "RF_OUT" O R 8450 2500 60 
 $EndSheet
+$Comp
+L power:GND #PWR04
+U 1 1 5A2AACDD
+P 9750 2950
+F 0 "#PWR04" H 9750 2700 50  0001 C CNN
+F 1 "GND" H 9750 2800 50  0000 C CNN
+F 2 "" H 9750 2950 50  0001 C CNN
+F 3 "" H 9750 2950 50  0001 C CNN
+	1    9750 2950
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	5200 3300 5750 3300
+	9750 2700 9750 2950
 Wire Wire Line
-	6850 3300 7300 3300
+	8450 2500 9600 2500
+$Comp
+L power:GND #PWR03
+U 1 1 5A2AC08A
+P 2250 1600
+F 0 "#PWR03" H 2250 1350 50  0001 C CNN
+F 1 "GND" H 2250 1450 50  0000 C CNN
+F 2 "" H 2250 1600 50  0001 C CNN
+F 3 "" H 2250 1600 50  0001 C CNN
+	1    2250 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1550 2250 1550
+Wire Wire Line
+	2250 1550 2250 1600
+$Comp
+L power:VCC #PWR02
+U 1 1 5A2AC12B
+P 2250 1250
+F 0 "#PWR02" H 2250 1100 50  0001 C CNN
+F 1 "VCC" H 2250 1400 50  0000 C CNN
+F 2 "" H 2250 1250 50  0001 C CNN
+F 3 "" H 2250 1250 50  0001 C CNN
+	1    2250 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1350 2250 1350
+Wire Wire Line
+	2250 1350 2250 1250
+$Comp
+L power:GND #PWR01
+U 1 1 5A2AC762
+P 1400 3200
+F 0 "#PWR01" H 1400 2950 50  0001 C CNN
+F 1 "GND" H 1400 3050 50  0000 C CNN
+F 2 "" H 1400 3200 50  0001 C CNN
+F 3 "" H 1400 3200 50  0001 C CNN
+	1    1400 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 3100 1400 3200
+$Comp
+L Connector:RJ45-TRANSFO J1
+U 1 1 5A3231AA
+P 1350 5200
+F 0 "J1" H 1000 5925 50  0000 C CNN
+F 1 "RJ45-TRANSFO" H 1000 5834 50  0000 C CNN
+F 2 "" H 1350 5700 50  0001 C CNN
+F 3 "~" H 1450 5800 50  0001 C CNN
+	1    1350 5200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J2
+U 1 1 5A323CBA
+P 1400 2700
+F 0 "J2" H 1455 3167 50  0000 C CNN
+F 1 "USB_B_Micro" H 1455 3076 50  0000 C CNN
+F 2 "" H 1550 2650 50  0001 C CNN
+F 3 "~" H 1550 2650 50  0001 C CNN
+	1    1400 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Barrel_Jack J3
+U 1 1 5A3242D7
+P 1800 1450
+F 0 "J3" H 1878 1775 50  0000 C CNN
+F 1 "Barrel_Jack" H 1878 1684 50  0000 C CNN
+F 2 "Connectors:Barrel_Jack_CUI_PJ-036AH-SMT" H 1850 1410 50  0001 C CNN
+F 3 "~" H 1850 1410 50  0001 C CNN
+	1    1800 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J4
+U 1 1 5A324912
+P 9750 2500
+F 0 "J4" H 9849 2476 50  0000 L CNN
+F 1 "RF Out" H 9849 2385 50  0000 L CNN
+F 2 "" H 9750 2500 50  0001 C CNN
+F 3 "" H 9750 2500 50  0001 C CNN
+	1    9750 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 2500 7500 2500
 $EndSCHEMATC

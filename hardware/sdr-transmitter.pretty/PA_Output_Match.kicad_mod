@@ -1,0 +1,28 @@
+(module PA_Output_Match (layer F.Cu) (tedit 5B0B16FA)
+  (fp_text reference IM2 (at -0.129 4.825) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value PA_Output_Match (at 12.74 5.32) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad 1 smd custom (at 0 0) (size 2.16 4.91) (layers F.Cu F.Paste F.Mask)
+    (zone_connect 0)
+    (options (clearance outline) (anchor rect))
+    (primitives
+      (gr_poly (pts
+         (xy -1.08 -2.455) (xy -1.08 2.455) (xy 2.17 2.455) (xy 2.17 3.455) (xy 3.27 3.455)
+         (xy 3.27 2.455) (xy 4.22 2.455) (xy 5.91 1.25) (xy 17.51 1.25) (xy 17.51 1.65)
+         (xy 18.51 1.65) (xy 18.51 1.25) (xy 18.705 1.25) (xy 18.71 1.25) (xy 20.11 0.55)
+         (xy 21.16 0.55) (xy 21.16 9.25) (xy 5.11 9.25) (xy 5.11 8.85) (xy 4.01 8.85)
+         (xy 4.01 9.25) (xy 3.91 9.25) (xy 3.91 10.35) (xy 21.48 10.35) (xy 22.26 9.57)
+         (xy 22.26 0.225) (xy 21.48 -0.55) (xy 20.11 -0.55) (xy 18.71 -1.25) (xy 18.51 -1.25)
+         (xy 18.51 -1.65) (xy 17.51 -1.65) (xy 17.51 -1.25) (xy 5.91 -1.25) (xy 4.22 -2.455)
+         (xy 4.02 -2.455) (xy 4.02 -3.455) (xy 1.42 -3.455) (xy 1.42 -2.455)) (width 0.01))
+    ))
+  (pad 1 smd rect (at 2.72 -2.955) (size 2.6 1) (layers F.Cu F.Paste F.Mask))
+  (pad 1 smd rect (at 2.72 2.955) (size 1.1 1) (layers F.Cu F.Paste F.Mask))
+  (pad 1 smd rect (at 18.01 -1.45) (size 1 0.4) (layers F.Cu F.Paste F.Mask))
+  (pad 1 smd rect (at 18.01 1.45) (size 1 0.4) (layers F.Cu F.Paste F.Mask))
+  (pad 1 smd rect (at 4.56 9.05) (size 1.1 0.4) (layers F.Cu F.Paste F.Mask))
+  (pad 1 smd rect (at 4.465 9.8) (size 1.1 1.1) (layers F.Cu F.Paste F.Mask))
+)
